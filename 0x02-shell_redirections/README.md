@@ -1,1 +1,1 @@
-shell input output redirecton
+input output redirection
