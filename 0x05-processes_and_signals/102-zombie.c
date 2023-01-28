@@ -2,16 +2,19 @@
 * File: 102-zombie.c
 * Auth: Brennan D Baraban
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
+
 /**
 * infinite_while - Run an infinite while loop.
 *
 * Return: Always 0.
 */
+
 int infinite_while(void)
   {
   while (1)
@@ -31,6 +34,7 @@ int main(void)
 {
   pid_t pid;
   char count = 0;
+
   while (count < 5)
     {
       pid = fork(); 
@@ -44,5 +48,6 @@ int main(void)
 	exit(0);
     }
   infinite_while();
+
   return (EXIT_SUCCESS);
 }
